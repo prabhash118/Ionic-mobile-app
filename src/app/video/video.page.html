@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>video</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <img src="\assets\images\pexels-kristina-paukshtite-1444620.png" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="\assets\images\pexels-peter-fazekas-1653631.png" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="\assets\images\pexels-quang-nguyen-vinh-2137388.png" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="\assets\images\pexels-rahul-pandit-1605041.png" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="\assets\images\pexels-sohail-na-807598.png" alt="">
+      </ion-slide>
+    </ion-slides>
+    <!-- <h1>{{ sname }}</h1> -->
+    <ion-row>
+      <ion-col size="12">
+        <h3 *ngFor="let item of students">
+          {{item}}
+        </h3>
+        
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor = "let names of students">
+      <ion-col size="12">
+        <ion-list>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="https://assets.capitalfm.com/2018/23/lilliya-scarlett-instagram-1528814125-custom-0.png">
+            </ion-avatar>
+            <ion-label>
+              <h1>{{names}}</h1>
+              <h3>Without music, life would be a mistake</h3>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" *ngFor="let item of blogs">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>{{item.caption}}</ion-card-subtitle>
+          <img src="{{item.poster}}" alt="">
+          <ion-card-title>{{item.name}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{item.overview}}
+        </ion-card-content>
+        <ion-button shape="round" (click)="onClick(item)">More..</ion-button>
+      </ion-card>
+     
+    </ion-col>
+    </ion-row>
+   
+  </ion-content>
+

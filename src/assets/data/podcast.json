@@ -1,0 +1,36 @@
+[
+    {
+        "id" : 1,
+        "name" : " The Lion King",
+        "poster" :"assets/images/The_Lion_King.jpg",
+        "video" : "/assets/images/lktrailer.mp4",
+        "slide1" :"/assets/images/lk1.jpg",
+        "slide2" :"/assets/images/lk2.jpg",
+        "slide3" :"/assets/images/lk3.jpg",
+        "slide4" :"/assets/images/lk4.jpg",
+        "caption" : " Matthew Broderick, Jeremy Irons, James Earl Jones  ",
+        "overview" : "It was the top-grossing animated film until Toy Story 3 passed it in 2010 and then Frozen topped them both."
+    },
+    {
+        "id" : 2,
+        "name" : " 100 Toy Story",
+        "poster" :"assets/images/toy_story.jpg",
+        "caption" : "Tom Hanks, Tim Allen",
+        "overview" : "Each CGI frame took from four to 13 hours to render, nearly as long as the last iPhone update."
+    },
+    {
+        "id" : 3,
+        "name" : "Beauty and the Beast",
+        "poster" :"assets/images/beauty_beast.jpg",
+        "caption" : "Paige O'Hara, Robby Benson, Richard White",
+        "overview" : "It was the first animated film ever nominated for best picture."
+    },
+    {
+        "id" : 4,
+        "name" : "Avatar",
+        "poster" :"assets/images/Avatar.jpg",
+        "caption" : "Sam Worthington, Zoe Saldana, Sigourney Weaver ",
+        "overview" : "It's the highest grosser of all time, which explains the three sequels that will start rolling out in December 2016."
+    }
+]
+
